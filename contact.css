@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0e0a1b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d6b2ff;
+  }
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 100px;
+    color: #c084fc;
+    text-shadow: 0 0 10px #a363f7, 0 0 20px #9f5cf7;
+}
+.contact-row {
+    display: flex;
+    justify-content: space-around; /* or space-between */
+    align-items: flex-start;       /* top-align the sections */
+    margin: 50px;
+    gap: 40px;                     /* optional: adds space between sections */
+}
+
+.contact-row > div {
+    text-align: center;
+}
+.contact-row i {
+    font-size: 40px; /* Change this to whatever size you want */
+    margin-bottom: 10px;
+    color: #c084fc;  /* Optional: ensure consistent icon color */
+  }
+.sidenav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 160px;
+    z-index: 1000;
+  }
+  
+  .sidenav-trigger {
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: transparent;
+    z-index: 1001;
+  }
+  
+  .sidenav {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 150px;
+    height: 100%;
+    background-color: #111;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidenav-container:hover .sidenav {
+    left: 0;
+  }
+  
+  .sidenav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: #d6b2ff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidenav a i {
+    font-size: 20px;
+    color: #c084fc;
+  }
+  
+  .sidenav a:hover {
+    background-color: #5e2e91;
+    color: #ffffff;
+  }
+  .profileButtons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #6d23b6;
+    padding: 5px;
+    background-color: white;
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .profileButtons:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25);
+  }

@@ -1,0 +1,128 @@
+/* Base Body Styling */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0e0a1b;
+  color: #d6b2ff;
+}
+
+/* ========== SIDENAV STYLING ========== */
+
+/* Container that holds both trigger and nav */
+.sidenav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 160px;
+  z-index: 1000;
+}
+
+/* Invisible thin area that triggers the hover */
+.sidenav-trigger {
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: transparent;
+  z-index: 1001;
+}
+
+/* Actual sidebar nav */
+.sidenav {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 150px;
+  height: 100%;
+  background-color: #111;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+/* Reveal nav when hovering on container */
+.sidenav-container:hover .sidenav {
+  left: 0;
+}
+
+/* Sidebar links */
+.sidenav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #d6b2ff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidenav a i {
+  font-size: 20px;
+  color: #c084fc;
+}
+
+.sidenav a:hover {
+  background-color: #5e2e91;
+  color: #ffffff;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+.main-content {
+  margin-left: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ========== TYPOGRAPHY ========== */
+
+h1, h2 {
+  color: #c084fc;
+  text-shadow: 0 0 5px #9f5cf7, 0 0 10px #9f5cf7;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+/* ========== BUTTONS ========== */
+
+/* Use this for anchor tags that look like buttons */
+.button-link {
+  display: inline-block;
+  background: linear-gradient(145deg, #9f5cf7, #a363f7);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 10px #a363f7, 0 0 20px #5e2e91 inset;
+  transition: all 0.3s ease;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Center container if needed */
+.button-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== GENERAL SPACING ========== */
+
+div, section {
+  margin-bottom: 20px;
+}
